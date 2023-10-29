@@ -1,0 +1,17 @@
+[package]
+name = "mini-git"
+version = "0.1.0"
+edition = "2021"
+description = "A small Git implementation compatible with real git's loose object format"
+license = "MIT"
+
+[[bin]]
+name = "mgit"
+path = "src/main.rs"
+
+[dependencies]
+sha1 = "0.10"
+flate2 = "1"
+
+[dev-dependencies]
+tempfile = "3"
